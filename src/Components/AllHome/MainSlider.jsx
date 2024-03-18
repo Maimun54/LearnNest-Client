@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 const MainSlider = () => {
     return (
-        
             <div className="carousel w-full h-[800px]">
   <div id="slide1" className="carousel-item relative w-full">
     <img src="https://i.ibb.co/6DNC1Fn/slide-11.png" className="w-full" />
