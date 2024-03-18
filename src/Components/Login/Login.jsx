@@ -4,7 +4,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 
 
 
-import { AuthContext } from "../../Provider/AuthProvider";
+// import { AuthContext } from "../../Provider/AuthProvider";
 import Swal from "sweetalert2";
 
 import SocialLogin from "../../Components/SocialLogin";
@@ -41,7 +41,7 @@ const Login = () => {
     return (
         <div>
              <div className="text-center">
-             <h2 className="text-4xl uppercase font-bold py-3">WELCOME TO OUR WealthNest</h2>
+             <h2 className="text-4xl uppercase font-bold py-3">WELCOME TO OUR LearnNest</h2>
              <h2 className="text-4xl font-bold py-3">LOGIN NOW</h2>
                 
             </div>
@@ -78,10 +78,9 @@ const Login = () => {
        <p className="text-center py-5">Do not have an account?
        
        <div className="">
-       <Link to="/joinEmployee" className="text-blue-600 font-bold">
-          Join as Employee</Link>
-          <Link to="/joinAdmin" className="text-blue-600 font-bold mx-2">
-          Join as Admin</Link>
+       <Link to="/registration" className="text-blue-600 font-bold">
+         Please Registration Hear</Link>
+          
        </div>
           
           </p>

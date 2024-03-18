@@ -1,15 +1,3 @@
-// import React from 'react';
-
-// const BecomeInstructour = () => {
-//     return (
-//         <div>
-            
-//         </div>
-//     );
-// };
-
-// export default BecomeInstructour;
-
 
 import Container from '../Shared/Container';
 
@@ -34,17 +22,14 @@ const BecomeInstructour = () => {
           data-aos='zoom-in-left'
         >
           <div className='flex-1 flex justify-center items-center'>
-            <img className='inline-block' src="https://i.ibb.co/G3HHZkD/become-a-instractor-aacbfd4a.jpg" alt='' />
+            <img className='inline-block' src="https://i.ibb.co/Tr69hqd/out-of-state-teacher-1.webp" alt='' />
           </div>
           <div className='flex-1 space-y-4'>
             <h2 className='text-2xl sm:text-3xl font-bold'>
               Become an instructor
             </h2>
             <p className='text-neutral-500'>
-              Instructors globally unite on SkillUP! With millions of eager
-              learners, SkillUP empowers you with the tools and expertise to
-              share what you love. Join our vibrant community and teach your
-              passion today!
+            Unify with instructors worldwide on SkillUP! With a vast community of millions of enthusiastic learners, SkillUP equips you with the resources and knowledge to impart your expertise and passion. Embrace our vibrant community and ignite the spark of learning by teaching what you love today!
             </p>
             <div>
               <Link

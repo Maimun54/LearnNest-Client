@@ -1,7 +1,9 @@
 import BecomeInstructour from "../../../Components/AllHome/BecomeInstructour";
 import CommonQuestion from "../../../Components/AllHome/CommonQuestion";
+import CourseContent from "../../../Components/AllHome/CourseBenefits/CourseContent";
 import MainSlider from "../../../Components/AllHome/MainSlider";
 import PartnerSection from "../../../Components/AllHome/PartnerSection";
+import PlatformOverview from "../../../Components/AllHome/PlatformOverview";
 
 const Home = () => {
     return (
@@ -9,8 +11,11 @@ const Home = () => {
    
             <MainSlider></MainSlider>
             <PartnerSection></PartnerSection>
-           <CommonQuestion></CommonQuestion>
+          
            <BecomeInstructour></BecomeInstructour>
+           <PlatformOverview></PlatformOverview>
+           <CourseContent></CourseContent>
+           <CommonQuestion></CommonQuestion>
         </div>
     );
 };
