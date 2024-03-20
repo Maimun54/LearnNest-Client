@@ -36,7 +36,7 @@ const CommonQuestion = () => {
           </div>
         </div>
 
-        {/* Add other FAQ sections similarly */}
+        
         
       </Container>
     </div>

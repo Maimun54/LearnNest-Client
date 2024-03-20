@@ -11,42 +11,42 @@ import SectionHeader from '../../Shared/SectionHeader/SectionHeader';
 
 const liveCourseContent = [
   {
-    title: 'Interactive Live Class',
+    title: 'Engaging Live Sessions',
     id: 1,
     icon: <TbPhotoVideo/>,
     description:
       'Engage in real-time discussions with instructors and peers, fostering an interactive learning environment for a richer educational experience.',
   },
   {
-    title: 'Progress Planning And Tracking',
+    title: 'Monitoring and Advancement Tracker',
     id: 2,
     icon: <GrGraphQl/>,
     description:
       'Plan your learning journey systematically and track your progress effortlessly to achieve your educational milestones effectively.',
   },
   {
-    title: 'Module-Based Study Plan',
+    title: 'Structured Learning Modules',
     id: 3,
     icon: <BsBoxes/>,
     description:
       'Organize your learning with structured module-based study plans, enhancing comprehension and retention of course materials.',
   },
   {
-    title: 'Industry-Focused Live Courses',
+    title: 'Practical Industry-Centric Sessions',
     id: 4,
     icon: <MdVideoChat/>,
     description:
       'Immerse yourself in industry-specific live courses designed to provide practical skills and knowledge relevant to current market demands.',
   },
   {
-    title: 'Job Placement Support',
+    title: 'Career Assistance Services',
     id: 5,
     icon: <FaHandsHelping/>,
     description:
       'Receive dedicated support in securing job placements, with resources and guidance to help you transition smoothly into your desired career path.',
   },
   {
-    title: 'Learn From Experts',
+    title: 'Gain Insights from Professionals',
     id: 6,
     icon: <FaRegAddressCard/>,
     description:

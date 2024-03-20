@@ -1,3 +1,4 @@
+import Banner from "../../../Components/AllHome/Banner";
 import BecomeInstructour from "../../../Components/AllHome/BecomeInstructour";
 import CommonQuestion from "../../../Components/AllHome/CommonQuestion";
 import CourseContent from "../../../Components/AllHome/CourseBenefits/CourseContent";
@@ -9,9 +10,9 @@ const Home = () => {
     return (
         <div>
    
-            <MainSlider></MainSlider>
+            {/* <MainSlider></MainSlider> */}
+            <Banner></Banner>
             <PartnerSection></PartnerSection>
-          
            <BecomeInstructour></BecomeInstructour>
            <PlatformOverview></PlatformOverview>
            <CourseContent></CourseContent>

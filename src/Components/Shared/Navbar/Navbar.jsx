@@ -1,64 +1,22 @@
 
 import { NavLink } from "react-router-dom";
-import useAuth from "../../../hooks/useAuth";
-import { useEffect, useState } from "react";
-import useAxiosPublic from "../../../hooks/useAxiosPublic";
+import DropMenu from "./DropMenu";
+
 
 const Navbar = () => {
-  const { user, loginOut } = useAuth() || ""
-  const [userData, setUserData] = useState('') ||''
-  const axiosPublic =useAxiosPublic()
-  console.log(userData)
-  useEffect(() => {
-    axiosPublic.get(`/user/${user?.email}`)
-      .then(res => {
-
-        setUserData(res.data)
-      })
-
-  }, [axiosPublic,setUserData,user?.email])
-
-  const handleLogOut = () => {
-    loginOut()
-      .then()
-      .catch()
-  }
+  
+ 
   const navLinks = <>
     {
-      userData?.role === 'employee' ? (
-        // Employee routes go here
+      
+      
         <>
           <li><NavLink to="/">Home</NavLink></li>
-          <li><NavLink to="/myAssets">All Classes</NavLink></li>
-          <li><NavLink to="/myTeam">Teach on LearnNest</NavLink></li>
-          <li><NavLink to="/customRequest">Make a Custom Request</NavLink></li>
-          <li><NavLink to="/requestAssets">Request for an Assets</NavLink></li>
-          <li><NavLink to="/profile">Profile</NavLink></li>
-          <li><button onClick={handleLogOut}>Sign Out</button></li>
-        </>
-      ) : userData?.role === 'admin' ? (
-        // Admin routes go here
-        <>
-          <li><NavLink to="/">Home</NavLink></li>
-          <li><NavLink to="/myEmployeeList">All Classes</NavLink></li>
-          <li><NavLink to="/addEmployee">Teach on LearnNest</NavLink></li>
-          <li><NavLink to="/addAssets">Add an Assets</NavLink></li>
-          <li><NavLink to="/assetList">Asset List</NavLink></li>
-          <li><NavLink to="/allRequests">All Requests</NavLink></li>
-          <li><NavLink to="/customRequestList">Custom Request List</NavLink></li>
-
-          <li><NavLink to="/Profile">Profile</NavLink></li>
-          <li><button onClick={handleLogOut}>Sign Out</button></li>
-        </>
-      ) : (
-        // Default routes or error handling go here
-        <>
-          <li><NavLink to="/">Home</NavLink></li>
-          <li><NavLink to="/joinEmployee">All Classes</NavLink></li>
-          <li><NavLink to="/joinAdmin">Teach on LearnNest</NavLink></li>
+          <li><NavLink to="/allclass">All Classes</NavLink></li>
+          <li><NavLink to="/teachlearnnest">Teach on LearnNest</NavLink></li>
           <li><NavLink to="/login">Login</NavLink></li>
         </>
-      )
+     
     }
 
   </>
@@ -88,17 +46,18 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-end">
-          <p className="py-5">{user?.displayName}</p>
+          <p className="py-5">{}</p>
 
           <label tabIndex={0} className="ml-5 ">
             <div >
               <div className="w-[30px] py-3 rounded-full ">
-                <img src={userData?.photo} alt="" />
+                <img src="" alt="" />
               </div>
             </div>
           </label>
 
         </div>
+        <DropMenu></DropMenu>
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ import useAuth from "../../hooks/useAuth";
       const axiosPublic =useAxiosPublic()
      
     const {createUser,updateUserProfile}=useAuth()
-    const role ='employee'
+    const role ='Admin'
    
     const {
         register,handleSubmit,reset,formState: { errors },} = useForm()
@@ -30,9 +30,7 @@ import useAuth from "../../hooks/useAuth";
                   name:data.name,
                   email:data.email,
                   photo:data.photo,
-                  Birthday:data.Birthday,
                   role:role,
-                  haveEmployed:null
                  }
                  axiosPublic.post('/users',userInfo,role)
                  .then(res=>{
@@ -75,13 +73,7 @@ import useAuth from "../../hooks/useAuth";
           <input type="text" {...register("photo",{required:true})}  placeholder="photo  url" className="input input-bordered"  />
           {errors.photo && <span className="text-red-600">Tomar Picture dow mama</span>}
         </div>
-        <div className="form-control">
-          <label className="label">
-            <span className="label-text">Birthday</span>
-          </label>
-          <input type="date" {...register("Birthday",{required:true})}  placeholder="Birthday" className="input input-bordered"  />
-          {errors.Birthday && <span className="text-red-600">Select your Date of birth</span>}
-        </div>
+       
         <div className="form-control">
           <label className="label">
             <span className="label-text">Email</span>
@@ -110,7 +102,7 @@ import useAuth from "../../hooks/useAuth";
         </div>
       </form>
       <div className="p-5">
-        <h2 className="text-center">Already Joined as a Employee <span className="font-bold"><Link to='/login'>Login</Link></span></h2>
+        <h2 className="text-center">Already Joined as a User <span className="font-bold"><Link to='/login'>Login</Link></span></h2>
         <SocialLogin></SocialLogin>
       </div>
     </div>

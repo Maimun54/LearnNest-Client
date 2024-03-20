@@ -6,6 +6,9 @@ import Main from "../Layout/Main";
 import Home from "../Pages/Home/Home/Home";
 import Login from "../Components/Login/Login";
 import Registration from "../Components/Login/Registration";
+import Allclass from "../Pages/AllClass/Allclass";
+import TeachLearnNest from "../Pages/TeachOnLearnNest/TeachLearnNest";
+import PrivetRoute from "./PrivetRoute";
 
 
  export const router = createBrowserRouter([
@@ -25,6 +28,14 @@ import Registration from "../Components/Login/Registration";
         {
           path:'/registration',
           element: <Registration></Registration> 
+         },
+         {
+          path:'/allclass',
+          element: <Allclass></Allclass> 
+         },
+         {
+          path:'/teachlearnnest',
+          element:<PrivetRoute><TeachLearnNest></TeachLearnNest></PrivetRoute>
          }
       ]
     },
